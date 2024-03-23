@@ -1,5 +1,5 @@
-import {sayHello} from 's2-typescript';
-//import {Generar} from '../generator/generador'
-sayHello();
+import {init} from 's2-typescript';
+
+init();
 
  
