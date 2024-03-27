@@ -4,10 +4,13 @@
       "target": "es2019",
       "declaration": true,
       "outDir": "./dist",
-      "strict": false
+      "strict": false,
+      "baseUrl": ".",
+      "paths": {
+        "@schemas": ["src/schemas/generated"]
+      }
     },
     "include": [
-      "src/**/*",
-      "s2-json-schema/**/*"
+      "src/**/*"
     ]
   }

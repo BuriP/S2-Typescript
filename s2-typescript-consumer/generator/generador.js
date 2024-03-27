@@ -40,7 +40,7 @@ exports.Generar = void 0;
 var json_schema_to_typescript_1 = require("json-schema-to-typescript");
 var fs = require("fs");
 // Specify the path to your JSON schema file
-var path = 'generator/messages'; // Adjust the path as needed
+var path = 'generator/schemas'; // Adjust the path as needed
 // Function to generate TypeScript types for each JSON schema file
 function generateTypesForSchemas(folderPath) {
     return __awaiter(this, void 0, void 0, function () {
@@ -67,7 +67,7 @@ function generateTypesForSchemas(folderPath) {
                     return [4 /*yield*/, (0, json_schema_to_typescript_1.compileFromFile)(schemaFilePath, { 'cwd': path })];
                 case 4:
                     ts = _a.sent();
-                    outputFilePath = "".concat(newFile.replace('.schema.json', '.d.ts'));
+                    outputFilePath = "".concat(newFile.replace('.schema.json', '.ts'));
                     fs.writeFileSync(outputFilePath, ts);
                     console.log("TypeScript types generated for ".concat(file));
                     return [3 /*break*/, 6];
@@ -100,3 +100,4 @@ function Generar() {
     generateTypesForSchemas(path);
 }
 exports.Generar = Generar;
+Generar();

@@ -3,7 +3,7 @@ import * as fs from 'fs';
 
 
 // Specify the path to your JSON schema file
-const path: string = 'generator/messages'; // Adjust the path as needed
+const path: string = 'generator/schemas'; // Adjust the path as needed
 
 // Function to generate TypeScript types for each JSON schema file
 async function generateTypesForSchemas(folderPath : string) {
@@ -21,7 +21,7 @@ async function generateTypesForSchemas(folderPath : string) {
       const schemaFilePath = `${folderPath}/${file}`;
       const newFile = `${folderPath}/generated/${file}`;
       const ts = await compileFromFile(schemaFilePath, {'cwd':path});
-      const outputFilePath = `${newFile.replace('.schema.json', '.d.ts')}`;
+      const outputFilePath = `${newFile.replace('.schema.json', '.ts')}`;
       fs.writeFileSync(outputFilePath, ts);
       console.log(`TypeScript types generated for ${file}`);
       }catch(error){
@@ -43,3 +43,5 @@ async function generateTypesForSchemas(folderPath : string) {
 export function Generar() {
   generateTypesForSchemas(path);
 }
+
+Generar();
