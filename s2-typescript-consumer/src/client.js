@@ -10,7 +10,5 @@ function wait(seconds) {
     });
 }
 wait(5).then(function () {
-    console.log("Cliente enviando mensaje");
     wsClient.SendMessage("Cliente enviando mensaje");
-    wsClient.BroadcastMessage("Cliente emitiendo mensaje");
 });

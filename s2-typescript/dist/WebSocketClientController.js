@@ -12,7 +12,6 @@ class WebSocketClientController {
         });
         this.ws.on('message', message => {
             console.log(`Cliente Received message => ${message}`);
-            //this.ws.send(`Client Received message => ${message}`);
         });
         this.ws.on('close', () => {
             console.log('Disconnected');
@@ -21,15 +20,6 @@ class WebSocketClientController {
     SendMessage(message) {
         console.log(`Sending message => ${message}`);
         this.ws.send(message);
-    }
-    BroadcastMessage(message) {
-        const wss = this.ws._server;
-        // wss.clients.forEach(client => {
-        //     if (client !== this.ws && client.readyState === 1) {
-        //         client.send(message);
-        //         console.log(`Sent message to ${client.url}`);
-        //     }
-        // });
     }
 }
 exports.WebSocketClientController = WebSocketClientController;
