@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      "target": "es6",
+      "strict": true,
+      "declaration": true
+    },
+    "include": [
+      "src",
+      "node_modules/s2-typescript"
+    ]
+  }
+  
