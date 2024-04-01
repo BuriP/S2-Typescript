@@ -1,4 +1,4 @@
-import { Handshake } from "./";
+import { Handshake } from "./index";
 
 export function init(){
     console.log('Hi from S2 typescript app');
