@@ -1,5 +1,5 @@
-import { PowerForecastValue } from './common/PowerForecastValue';
-import { PowerRange } from './common/PowerRange';
+import { PowerForecastValue } from './app/common/PowerForecastValue';
+import { PowerRange } from './app/common/PowerRange';
 
 export function init(){
     console.log('Hi from S2 typescript app');
