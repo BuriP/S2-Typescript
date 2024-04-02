@@ -1,5 +1,5 @@
-import { FRBC_StorageStatus } from "src/messages/generated";
-import { ID } from "@schemas";
+import { FRBC_StorageStatus } from "../../messages/generated";
+import { ID } from "../../schemas/generated";
 export declare class FrbcStorageStatus implements FRBC_StorageStatus {
     message_type: "FRBC.StorageStatus";
     message_id: ID;

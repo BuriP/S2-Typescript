@@ -1,5 +1,5 @@
-import { FRBC_ActuatorDescription } from "@schemas";
-import { Commodity, FRBC_OperationMode, Transition, Timer, ID } from "@schemas";
+import { FRBC_ActuatorDescription } from "../../schemas/generated";
+import { Commodity, FRBC_OperationMode, Transition, Timer, ID } from "../../schemas/generated";
 export declare class FrbcActuatorDescription implements FRBC_ActuatorDescription {
     id: ID;
     diagnostic_label?: string;

@@ -1,5 +1,4 @@
-import { SessionRequest as GenSessionRequest } from "src/messages/generated";
-import { SessionRequestType } from "src/messages/generated/SessionRequest";
+import { SessionRequest as GenSessionRequest, SessionRequestType } from "@messages";
 
 export class SessionRequest implements GenSessionRequest {
     message_type: "SessionRequest";

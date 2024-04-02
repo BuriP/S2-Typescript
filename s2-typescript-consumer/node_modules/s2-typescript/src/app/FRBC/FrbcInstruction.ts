@@ -1,4 +1,4 @@
-import { FRBC_Instruction } from "src/messages/generated";
+import { FRBC_Instruction } from "@messages";
 import { ID } from "@schemas";
 
 export class FrbcInstruction implements FRBC_Instruction {

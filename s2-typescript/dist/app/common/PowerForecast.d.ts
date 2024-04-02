@@ -1,5 +1,5 @@
-import { PowerForecast as GenPowerForecast } from "src/messages/generated";
-import { PowerForecastElement } from "src/messages/generated/PowerForecast";
+import { PowerForecast as GenPowerForecast } from "../../messages/generated";
+import { PowerForecastElement } from "../../messages/generated";
 export declare class PowerForecast implements GenPowerForecast {
     message_type: "PowerForecast";
     message_id: string;

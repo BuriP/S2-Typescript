@@ -1,5 +1,5 @@
 import { PowerValue } from "@schemas";
-import { PowerMeasurement as GenPowerMeasurement } from "src/messages/generated";
+import { PowerMeasurement as GenPowerMeasurement } from "@messages";
 
 export class PowerMeasurement implements GenPowerMeasurement {
     message_type : "PowerMeasurement";

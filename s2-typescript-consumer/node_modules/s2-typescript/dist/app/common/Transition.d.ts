@@ -1,4 +1,4 @@
-import { Transition as GenTransition, ID, Duration } from "@schemas";
+import { Transition as GenTransition, ID, Duration } from "../../schemas/generated";
 export declare class Transition implements GenTransition {
     id: ID;
     from: ID;

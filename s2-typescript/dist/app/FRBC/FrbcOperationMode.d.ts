@@ -1,5 +1,5 @@
-import { FRBC_OperationMode, FRBC_OperationModeElement } from "@schemas";
-import { ID } from "@schemas";
+import { FRBC_OperationMode, FRBC_OperationModeElement } from "../../schemas/generated";
+import { ID } from "../../schemas/generated";
 export declare class FrbcOperationMode implements FRBC_OperationMode {
     id: ID;
     diagnostic_label?: string;

@@ -1,4 +1,4 @@
-import { FRBC_StorageDescription, NumberRange } from "@schemas";
+import { FRBC_StorageDescription, NumberRange } from "../../schemas/generated";
 export declare class FrbcStorageDescription implements FRBC_StorageDescription {
     diagnostic_label?: string;
     fill_level_label?: string;

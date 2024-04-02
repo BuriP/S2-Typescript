@@ -1,4 +1,4 @@
-import { FRBC_LeakageBehaviour } from "src/messages/generated";
+import { FRBC_LeakageBehaviour } from "@messages";
 import { FRBC_LeakageBehaviourElement, ID } from "@schemas";
 
 export class FrbcLeakageBehaviour implements FRBC_LeakageBehaviour {

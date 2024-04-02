@@ -1,5 +1,5 @@
-import { RevokeObject as GenRevokeObject } from "src/messages/generated";
-import { RevokableObjects } from "src/messages/generated/RevokeObject";
+import { RevokeObject as GenRevokeObject } from "../../messages/generated";
+import { RevokableObjects } from "../../messages/generated";
 export declare class RevokeObject implements GenRevokeObject {
     message_type: "RevokeObject";
     message_id: string;

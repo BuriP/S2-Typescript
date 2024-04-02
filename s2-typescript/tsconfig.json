@@ -7,7 +7,8 @@
       "strict": false,
       "baseUrl": ".",
       "paths": {
-        "@schemas": ["src/schemas/generated"]
+        "@schemas": ["src/schemas/generated"],
+        "@messages": ["src/messages/generated"]
       }
     },
     "include": [

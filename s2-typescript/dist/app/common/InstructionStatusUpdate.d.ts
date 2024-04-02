@@ -1,5 +1,4 @@
-import { InstructionStatusUpdate as GenInstructionStatusUpdate } from "src/messages/generated";
-import { InstructionStatus } from "src/messages/generated/InstructionStatusUpdate";
+import { InstructionStatusUpdate as GenInstructionStatusUpdate, InstructionStatus } from "../../messages/generated";
 export declare class InstructionStatusUpdate implements GenInstructionStatusUpdate {
     message_type: "InstructionStatusUpdate";
     message_id: string;

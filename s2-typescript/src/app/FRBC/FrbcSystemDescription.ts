@@ -1,6 +1,6 @@
-import { FRBC_SystemDescription } from "src/messages/generated";
+import { FRBC_SystemDescription } from "@messages";
 import { ID, FRBC_ActuatorDescription } from "@schemas";
-import { FRBC_StorageDescription } from "src/messages/generated/FRBC.SystemDescription";
+import { FRBC_StorageDescription } from "@schemas";
 
 export class FrbcSystemDescription implements FRBC_SystemDescription {
     message_type: "FRBC.SystemDescription";

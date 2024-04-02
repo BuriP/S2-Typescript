@@ -1,4 +1,4 @@
-import { FRBC_FillLevelTargetProfile } from "src/messages/generated";
+import { FRBC_FillLevelTargetProfile } from "@messages";
 import { FRBC_FillLevelTargetProfileElement } from "@schemas";
 
 export class FrbcFillLevelTargetProfile implements FRBC_FillLevelTargetProfile {

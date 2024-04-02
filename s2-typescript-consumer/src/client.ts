@@ -1,15 +1,28 @@
 import { WebSocketClientController } from 's2-typescript';
+import { parseMessage } from 's2-typescript';
+import { HandshakeResponse } from 's2-typescript';
+import { wait } from './helpers/wait';
 
-const wsClient = new WebSocketClientController('ws://localhost:8000');
-
-function wait(seconds: number): Promise<void> {
-    return new Promise<void>((resolve) => {
-        setTimeout(() => {
-            resolve();
-        }, seconds * 1000); // Convert seconds to milliseconds
-    });
+let response : any = null;
+const parseResponse = (message : string) => {
+    try{
+        response = parseMessage(message);
+    }
+    catch(e){
+        console.log("ERRRRRROR");
+        console.log(e);
+    }
 }
 
-wait(5).then(() => {
-    wsClient.SendMessage("Cliente enviando mensaje");
+const wsClient = new WebSocketClientController('ws://localhost:8000', parseResponse.bind(this));
+
+
+wait(10).then(() => {
+    console.log(response);
+    if(response){
+        if(response.message_type === "Handshake"){
+            const response = new HandshakeResponse({ message_id: "5", selected_protocol_version: "1.0" });
+            wsClient.SendMessage(JSON.stringify(response, null, 2));
+        }
+    }
 });

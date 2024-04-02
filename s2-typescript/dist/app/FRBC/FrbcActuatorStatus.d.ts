@@ -1,5 +1,5 @@
-import { FRBC_ActuatorStatus } from "src/messages/generated";
-import { ID } from "src/messages/generated/FRBC.ActuatorStatus";
+import { FRBC_ActuatorStatus } from "../../messages/generated";
+import { ID } from "../../schemas/generated";
 export declare class FrbcActuatorStatus implements FRBC_ActuatorStatus {
     message_type: "FRBC.ActuatorStatus";
     message_id: ID;

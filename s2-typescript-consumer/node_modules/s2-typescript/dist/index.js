@@ -1,12 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.FrbcUsageForecast = exports.FrbcTimerStatus = exports.FrbcStorageStatus = exports.FrbcStorageDescription = exports.FrbcOperationMode = exports.FrbcLeakageBehaviour = exports.FrbcInstruction = exports.FrbcFillLevelTargetProfile = exports.FrbcActuatorStatus = exports.FrbcActuatorDescription = exports.Transition = exports.Timer = exports.SessionRequest = exports.SelectControlType = exports.RevokeObject = exports.ResourceManagerDetails = exports.ReceptionStatus = exports.PowerMeasurement = exports.PowerForecastValue = exports.PowerForecast = exports.NumberRange = exports.InstructionStatusUpdate = exports.HandshakeResponse = exports.Handshake = exports.PowerRange = exports.WebSocketClientController = exports.WebSocketServerController = exports.init = void 0;
+exports.FrbcUsageForecast = exports.FrbcTimerStatus = exports.FrbcStorageStatus = exports.FrbcStorageDescription = exports.FrbcOperationMode = exports.FrbcLeakageBehaviour = exports.FrbcInstruction = exports.FrbcFillLevelTargetProfile = exports.FrbcActuatorStatus = exports.FrbcActuatorDescription = exports.Transition = exports.Timer = exports.SessionRequest = exports.SelectControlType = exports.RevokeObject = exports.ResourceManagerDetails = exports.ReceptionStatus = exports.PowerMeasurement = exports.PowerForecastValue = exports.PowerForecast = exports.NumberRange = exports.InstructionStatusUpdate = exports.HandshakeResponse = exports.Handshake = exports.PowerRange = exports.parseMessage = exports.WebSocketClientController = exports.WebSocketServerController = exports.init = void 0;
 var app_1 = require("./app"); //Exports the method to be use in another apps.
 Object.defineProperty(exports, "init", { enumerable: true, get: function () { return app_1.init; } });
 var WebSocketServerController_1 = require("./app/services/WebSocketServerController"); //Exports the method to be use in another apps.
 Object.defineProperty(exports, "WebSocketServerController", { enumerable: true, get: function () { return WebSocketServerController_1.WebSocketServerController; } });
 var WebSocketClientController_1 = require("./app/services/WebSocketClientController"); //Exports the method to be use in another apps.
 Object.defineProperty(exports, "WebSocketClientController", { enumerable: true, get: function () { return WebSocketClientController_1.WebSocketClientController; } });
+var MessageParser_1 = require("./app/services/MessageParser"); //Exports the method to be use in another apps.
+Object.defineProperty(exports, "parseMessage", { enumerable: true, get: function () { return MessageParser_1.parseMessage; } });
 //Common
 //Exports every class exported in the common folder
 var common_1 = require("./app/common");

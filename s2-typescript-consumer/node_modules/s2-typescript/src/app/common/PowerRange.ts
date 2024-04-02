@@ -1,5 +1,4 @@
-//import type { CommodityQuantity, PowerRange as GenPowerRange } from "../schemas/generated";
-import type { CommodityQuantity, PowerRange as GenPowerRange } from "../../schemas/generated";
+import type { CommodityQuantity, PowerRange as GenPowerRange } from "@schemas";
 
 export class PowerRange implements GenPowerRange{
     start_of_range: number;

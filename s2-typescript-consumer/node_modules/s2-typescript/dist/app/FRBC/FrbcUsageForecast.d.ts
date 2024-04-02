@@ -1,6 +1,5 @@
-import { FRBC_UsageForecast } from "src/messages/generated";
-import { FRBC_UsageForecastElement } from "src/messages/generated/FRBC.UsageForecast";
-import { ID } from "@schemas";
+import { FRBC_UsageForecast } from "../../messages/generated";
+import { ID, FRBC_UsageForecastElement } from "../../schemas/generated";
 export declare class FrbcUsageForecast implements FRBC_UsageForecast {
     message_type: "FRBC.UsageForecast";
     message_id: ID;

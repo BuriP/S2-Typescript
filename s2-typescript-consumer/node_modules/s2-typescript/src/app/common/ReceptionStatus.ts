@@ -1,5 +1,5 @@
-import { ReceptionStatus as GenReceptionStatus } from "src/messages/generated";
-import { ReceptionStatusValues } from "src/messages/generated/ReceptionStatus";
+import { ReceptionStatus as GenReceptionStatus } from "@messages";
+import { ReceptionStatusValues } from "@messages";
 
 export class ReceptionStatus implements GenReceptionStatus {
     message_type: "ReceptionStatus";

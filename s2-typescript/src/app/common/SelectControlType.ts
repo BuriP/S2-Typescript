@@ -1,5 +1,4 @@
-import { SelectControlType as GenSelectControlType } from "src/messages/generated";
-import { ControlType } from "src/messages/generated/SelectControlType";
+import { SelectControlType as GenSelectControlType, ControlType } from "@messages";
 
 export class SelectControlType implements GenSelectControlType {
     message_type: "SelectControlType";

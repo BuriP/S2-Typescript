@@ -3,14 +3,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.WebSocketServerController = void 0;
 const ws_1 = require("ws");
 class WebSocketServerController {
-    constructor(port = 8000) {
+    constructor(port = 8000, onMessage) {
         this.wss = new ws_1.WebSocketServer({ port: port });
+        this.onMessage = onMessage;
         this.wss.on('error', console.error);
         this.wss.on('connection', ws => {
             ws.on('message', message => {
-                console.log(`Server Received message => ${message}`);
+                this.onMessage(message);
             });
-            ws.send('Hello! This is the server');
+        });
+        this.wss.on('message', message => {
+            this.onMessage(message);
         });
     }
     AddMessageOnConection(message) {

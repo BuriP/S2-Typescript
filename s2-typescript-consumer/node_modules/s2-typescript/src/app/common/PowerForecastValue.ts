@@ -1,4 +1,4 @@
-import type { CommodityQuantity, PowerForecastValue as PowerForecastValueGen } from "../../schemas/generated";
+import type { CommodityQuantity, PowerForecastValue as PowerForecastValueGen } from "@schemas";
 
 export class PowerForecastValue implements PowerForecastValueGen {
     value_upper_limit?: number;

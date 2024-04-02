@@ -1,17 +1,25 @@
 import WebSocket, { WebSocketServer } from 'ws';
 
+
+export type MessageReceiveCallback = (message: string) => void;
+
 export class WebSocketServerController {
     wss: WebSocketServer;
-    constructor(port: number = 8000) {
+    onMessage: MessageReceiveCallback;
+    constructor(port: number = 8000, onMessage?: MessageReceiveCallback) {
         this.wss = new WebSocketServer({ port: port });
+        this.onMessage = onMessage;
 
         this.wss.on('error', console.error);
 
         this.wss.on('connection', ws => {
             ws.on('message', message => {
-                console.log(`Server Received message => ${message}`);
+                this.onMessage(message);
             });
-            ws.send('Hello! This is the server');
+        });
+
+        this.wss.on('message', message => {
+            this.onMessage(message);
         });
     }
 

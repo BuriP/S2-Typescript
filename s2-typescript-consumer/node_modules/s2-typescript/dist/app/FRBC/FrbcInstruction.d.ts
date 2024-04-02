@@ -1,5 +1,5 @@
-import { FRBC_Instruction } from "src/messages/generated";
-import { ID } from "@schemas";
+import { FRBC_Instruction } from "../../messages/generated";
+import { ID } from "../../schemas/generated";
 export declare class FrbcInstruction implements FRBC_Instruction {
     message_type: "FRBC.Instruction";
     message_id: ID;

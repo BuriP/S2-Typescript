@@ -1,4 +1,4 @@
-import { FRBC_TimerStatus } from "src/messages/generated";
+import { FRBC_TimerStatus } from "@messages";
 import { ID } from "@schemas";
 
 export class FrbcTimerStatus implements FRBC_TimerStatus {

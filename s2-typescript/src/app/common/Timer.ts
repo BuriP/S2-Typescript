@@ -1,5 +1,5 @@
-import { Timer as GenTimer} from '../../schemas/generated';
-import { Duration } from '../../schemas/generated';
+import { Timer as GenTimer} from '@schemas';
+import { Duration } from '@schemas';
 
 export class Timer implements GenTimer {
     id: string;

@@ -1,6 +1,7 @@
 export { init } from './app';
 export { WebSocketServerController } from './app/services/WebSocketServerController';
 export { WebSocketClientController } from './app/services/WebSocketClientController';
+export { parseMessage } from './app/services/MessageParser';
 export type { CommodityQuantity } from './schemas/generated';
 export type { EnergyManagementRole } from './messages/generated';
 export { PowerRange } from './app/common';

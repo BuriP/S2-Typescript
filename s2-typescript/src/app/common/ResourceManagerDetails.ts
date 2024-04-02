@@ -1,5 +1,5 @@
 import { Duration, Role, ControlType, Currency, CommodityQuantity } from "@schemas";
-import { ResourceManagerDetails as GenResourceManagerDetails } from "src/messages/generated";
+import { ResourceManagerDetails as GenResourceManagerDetails } from "@messages";
 
 export class ResourceManagerDetails implements GenResourceManagerDetails {
     message_type: "ResourceManagerDetails";
