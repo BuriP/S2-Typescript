@@ -11,5 +11,8 @@
     "devDependencies": {
         "json-schema-to-typescript": "^11.0.1",
         "typescript": "^5.4.2"
+    },
+    "dependencies": {
+        "s2-typescript": "^0.3.1"
     }
 }

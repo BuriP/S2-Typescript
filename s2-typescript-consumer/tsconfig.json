@@ -6,8 +6,7 @@
       "declaration": true
     },
     "include": [
-      "src",
-      "node_modules/s2-typescript"
+      "src"
     ]
   }
   
