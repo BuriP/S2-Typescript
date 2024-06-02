@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es2019",
+      "declaration": true,
+      "outDir": "./dist",
+      "strict": false,
+      "noUncheckedIndexedAccess": true,
+      "noEmit": true,
+      "baseUrl": ".",
+      "paths": {
+        "@app": ["src/app"],
+        "@schemas": ["src/schemas/generated"],
+        "@messages": ["src/messages/generated"]
+      }
+    },
+    "include": [
+      "src/**/*"
+    ]
+  }
