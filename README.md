@@ -1,7 +1,7 @@
 # S2-Typescript
 [![npm version](https://badge.fury.io/js/s2-typescript.svg)](https://badge.fury.io/js/s2-typescript)
 
-To check the commit history and evolution of this repo check this one instead.
+To see the commit history and evolution of this repo check this one instead.
 
 https://github.com/Royk8/s2-ts.
 
